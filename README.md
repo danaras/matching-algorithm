@@ -6,6 +6,7 @@ In this example we have 16 teams and 6 experts. All teams have submitted top 5 t
 The algorithm takes these preferences and creates 2 consecutive meetings for each team.
 
 Input data:
+```
 team	    pref
 A	        2,F,3,N,B
 B	        H,1,K,D,N
@@ -23,8 +24,9 @@ M	        P,4,G,N,C
 N	        L,D,J,I,A
 O	        D,F,L,H,2
 P	        N,5,I,B,O
-
+```
 Results:
+```
 team	   matched	  partner	   type
 A         true	      2,F	     participant
 B         true	      1,H	     participant
@@ -48,3 +50,4 @@ P	        true	      I,5	     participant
 4	        false	       ,	     expert
 5	        true	      E,P	     expert
 6	        false	       ,	     expert
+```
