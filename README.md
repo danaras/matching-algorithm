@@ -6,7 +6,11 @@ In this example we have 16 teams and 6 experts. All teams have submitted top 5 t
 The algorithm takes these preferences and creates 2 consecutive meetings for each team.
 
 Input data:
+
 ```
+var teams = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"]
+var experts = ['1', '2', '3', '4', '5', '6'];
+
 team	     pref
 A	        2,F,3,N,B
 B	        H,1,K,D,N
