@@ -7,7 +7,7 @@ The algorithm takes these preferences and creates 2 consecutive meetings for eac
 
 Input data:
 ```
-team	    pref
+team	     pref
 A	        2,F,3,N,B
 B	        H,1,K,D,N
 C	        D,E,G,P,M
@@ -27,27 +27,27 @@ P	        N,5,I,B,O
 ```
 Results:
 ```
-team	   matched	  partner	   type
-A         true	      2,F	     participant
-B         true	      1,H	     participant
-C	        true	      M,D	     participant
-D	        true	      K,C	     participant
-E	        true	      5,L	     participant
-F	        true	      O,A	     participant
-G	        true	      H,2	     participant
-H	        true	      G,B	     participant
-I	        true	      P,O	     participant
-J	        true	      3,N	     participant
-L         true	      N,E	     participant
-K	        true	      D,M	     participant
-M	        true	      C,K	     participant
-N	        true	      L,J	     participant
-O	        true	      F,I	     participant
-P	        true	      I,5	     participant
-1	        false	       B,	     expert
-2	        true	      A,G	     expert
-3	        false	       J,	     expert
-4	        false	       ,	     expert
-5	        true	      E,P	     expert
-6	        false	       ,	     expert
+team	  matched  partner	  type
+A         true      2,F	     participant
+B         true      1,H	     participant
+C         true      M,D	     participant
+D         true      K,C	     participant
+E         true      5,L	     participant
+F         true      O,A	     participant
+G         true      H,2	     participant
+H         true      G,B	     participant
+I         true      P,O	     participant
+J         true      3,N	     participant
+L         true      N,E	     participant
+K         true      D,M	     participant
+M         true      C,K	     participant
+N         true      L,J	     participant
+O         true      F,I	     participant
+P         true      I,5	     participant
+1         false     B, 	     expert
+2         true      A,G	     expert
+3         false     J, 	     expert
+4         false      , 	     expert
+5         true      E,P	     expert
+6         false      , 	     expert
 ```
