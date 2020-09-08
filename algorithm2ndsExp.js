@@ -354,7 +354,7 @@ function algorithm(p, prefCount, matchOrder, experts, teams, startTime) {
       x++;
       var currentTime = Date.now()/1000;
       console.log(currentTime - startTime)
-      if(currentTime - startTime > 5){
+      if(currentTime - startTime > 3){
         console.log("OVERTIME, RESTARTING")
         p = false
         return p
@@ -400,7 +400,7 @@ function runAlgorithm(initInput) {
 
   var results = algorithm(preferences2, teamsLength-1, 0, experts, teams, startTime);
   if(!results){
-      return runAlgorithm(input);
+      return runAlgorithm(initInput);
     }
 
   // ////console.log(results);
@@ -408,7 +408,7 @@ function runAlgorithm(initInput) {
 
   var results2 = algorithm(resultsUpdated, teamsLength-2, 1, experts, teams, startTime);
   if(!results2){
-      return runAlgorithm(input);
+      return runAlgorithm(initInput);
 
     }
   var matches = []
