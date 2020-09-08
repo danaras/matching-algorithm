@@ -306,17 +306,17 @@ function runAlgorithm(obj) {
   var teamsObj = obj.teams;
 
   var teams = [];
-  teamsObj.forEach(function (team) {
-teams.push(team.id);
-});
+  teamsObj.forEach(function(team) {
+    teams.push(team.id);
+  });
 
   //console.log("TEAMS")
   //console.log(teams)
   var expertsObj = obj.experts;
   var experts = [];
-  expertsObj.forEach(function (expert) {
-experts.push(expert.id);
-});
+  expertsObj.forEach(function(expert) {
+    experts.push(expert.id);
+  });
   //console.log("EXPERTS")
   //console.log(experts)
 
@@ -328,21 +328,24 @@ experts.push(expert.id);
   //console.log("xxxxxxxxxxxxxxxxx");
   //console.log(preferences2);
 
-  var results = algorithm(preferences2, 15, 0, experts, teams);
+  var results = algorithm(preferences2, teams.length, 0, experts, teams);
   //
   // //console.log(results);
   resultsUpdated = removeMatchedPrefs(results);
 
-  var results2 = algorithm(resultsUpdated, 14, 1, experts, teams);
+  var results2 = algorithm(resultsUpdated, teams.length-1, 1, experts, teams);
 
   var matches = []
-  results2.forEach(function (result) {
-matches.push({"team":result.team, "partners":result.partner});
-// var str = ""
-// //console.log(str.concat('{"team":',result.team,', "partners":',result.partner,'}'));
-});
-console.log("MATCHES")
-console.log(matches)
+  results2.forEach(function(result) {
+    matches.push({
+      "team": result.team,
+      "partners": result.partner
+    });
+    // var str = ""
+    // //console.log(str.concat('{"team":',result.team,', "partners":',result.partner,'}'));
+  });
+  console.log("MATCHES")
+  console.log(matches)
   return matches
 }
 runAlgorithm(input);
