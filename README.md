@@ -164,27 +164,25 @@ var input = {
 ```
 Results:
 ```
-team	  matched  partner	  type
-A         true      2,F	     participant
-B         true      1,H	     participant
-C         true      M,D	     participant
-D         true      K,C	     participant
-E         true      5,L	     participant
-F         true      O,A	     participant
-G         true      H,2	     participant
-H         true      G,B	     participant
-I         true      P,O	     participant
-J         true      3,N	     participant
-L         true      N,E	     participant
-K         true      D,M	     participant
-M         true      C,K	     participant
-N         true      L,J	     participant
-O         true      F,I	     participant
-P         true      I,5	     participant
-1         false     B, 	     expert
-2         true      A,G	     expert
-3         false     J, 	     expert
-4         false      , 	     expert
-5         true      E,P	     expert
-6         false      , 	     expert
+{"team":A, "partners":2,F}
+{"team":B, "partners":1,H}
+{"team":C, "partners":L,P}
+{"team":D, "partners":K,J}
+{"team":E, "partners":5,N}
+{"team":F, "partners":O,A}
+{"team":G, "partners":M,2}
+{"team":H, "partners":N,B}
+{"team":I, "partners":P,M}
+{"team":J, "partners":3,D}
+{"team":L, "partners":C,O}
+{"team":K, "partners":D,4}
+{"team":M, "partners":G,I}
+{"team":N, "partners":H,E}
+{"team":O, "partners":F,L}
+{"team":P, "partners":I,C}
+{"team":1, "partners":B,}
+{"team":2, "partners":A,G}
+{"team":3, "partners":J,}
+{"team":4, "partners":,K}
+{"team":5, "partners":E,}
 ```

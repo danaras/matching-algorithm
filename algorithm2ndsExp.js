@@ -154,10 +154,10 @@ var input = {
 
 function removeMatchedPrefs(p) {
   for (var i = 0; i < p.length; i++) {
-    console.log(p[i].team);
-    console.log(p[i].partner[0]);
+    //console.log(p[i].team);
+    //console.log(p[i].partner[0]);
     var restPref = p[i].pref.filter(x => !p[i].partner[0].includes(x));
-    console.log(restPref);
+    //console.log(restPref);
     p[i].pref = restPref;
   }
   return p
@@ -192,16 +192,16 @@ function randomizeRemainingPrefs(p, teams) {
     var remainingPrefs = teams.filter(x => !p[i].pref.includes(x));
     remainingPrefs = remainingPrefs.filter(x => !p[i].team.includes(x));
 
-    console.log("Initial team:")
-    console.log(p[i]);
-    console.log("Initial remaining preferences")
-    console.log(remainingPrefs);
+    //console.log("Initial team:")
+    //console.log(p[i]);
+    //console.log("Initial remaining preferences")
+    //console.log(remainingPrefs);
     shuffle(remainingPrefs);
     p[i].pref = p[i].pref.concat(remainingPrefs);
-    console.log("Final team:")
-    console.log(p[i]);
-    console.log("Final remaining preferences")
-    console.log(remainingPrefs);
+    //console.log("Final team:")
+    //console.log(p[i]);
+    //console.log("Final remaining preferences")
+    //console.log(remainingPrefs);
   }
   return p
 }
@@ -234,7 +234,7 @@ function algorithm(p, prefCount, matchOrder, experts, teams) {
       return team.matched === false && team.type === "participant"
     });
     var initTeamName = initTeam.team;
-    console.log("initial team: " + initTeamName);
+    //console.log("initial team: " + initTeamName);
     var x = 0;
     while (x < prefCount + 1 && p.find(team => {
         return team.team === initTeamName
@@ -247,7 +247,7 @@ function algorithm(p, prefCount, matchOrder, experts, teams) {
       var partner = p.find(team => {
         return team.team === initTeam.pref[x]
       });
-      console.log("partner: " + partner.team);
+      //console.log("partner: " + partner.team);
       if (partner.matched == false) {
         p.find(team => {
           return team.team === initTeam.pref[x]
@@ -262,16 +262,16 @@ function algorithm(p, prefCount, matchOrder, experts, teams) {
           return team.team === initTeamName
         }).partner[matchOrder] = partner.team;
         freeCount -= 2
-        console.log("not matched partner");
+        //console.log("not matched partner");
 
       } else {
-        console.log("matched partner");
+        //console.log("matched partner");
 
         var prevPartner = p.find(team => {
           return team.team === partner.team
         }).partner[matchOrder];
         if (prefersPrevPartnerOverP(p, partner.team, prevPartner, initTeamName, prefCount) == false) {
-          console.log("old partner: " + prevPartner + ", new partner: " + partner.team);
+          //console.log("old partner: " + prevPartner + ", new partner: " + partner.team);
 
           p.find(team => {
             return team.team === partner.team
@@ -295,14 +295,14 @@ function algorithm(p, prefCount, matchOrder, experts, teams) {
       }
       x++;
     }
-    console.log(freeCount);
-    console.log(p);
+    //console.log(freeCount);
+    //console.log(p);
   }
   return p
 }
 
 function runAlgorithm(obj) {
-  console.log(obj);
+  //console.log(obj);
   var teamsObj = obj.teams;
 
   var teams = [];
@@ -310,31 +310,39 @@ function runAlgorithm(obj) {
 teams.push(team.id);
 });
 
-  console.log("TEAMS")
-  console.log(teams)
+  //console.log("TEAMS")
+  //console.log(teams)
   var expertsObj = obj.experts;
   var experts = [];
   expertsObj.forEach(function (expert) {
 experts.push(expert.id);
 });
-  console.log("EXPERTS")
-  console.log(experts)
+  //console.log("EXPERTS")
+  //console.log(experts)
 
   var preferences = obj.pref;
-  console.log("PREFERENCES")
-  console.log(preferences);
+  //console.log("PREFERENCES")
+  //console.log(preferences);
 
   preferences2 = randomizeRemainingPrefs(preferences, teams);
-  console.log("xxxxxxxxxxxxxxxxx");
-  console.log(preferences2);
+  //console.log("xxxxxxxxxxxxxxxxx");
+  //console.log(preferences2);
 
   var results = algorithm(preferences2, 15, 0, experts, teams);
   //
-  console.log(results);
+  // //console.log(results);
   resultsUpdated = removeMatchedPrefs(results);
 
   var results2 = algorithm(resultsUpdated, 14, 1, experts, teams);
 
-  return results2
+  var matches = []
+  results2.forEach(function (result) {
+matches.push({"team":result.team, "partners":result.partner});
+// var str = ""
+// //console.log(str.concat('{"team":',result.team,', "partners":',result.partner,'}'));
+});
+console.log("MATCHES")
+console.log(matches)
+  return matches
 }
 runAlgorithm(input);
