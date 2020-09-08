@@ -152,76 +152,6 @@ var input = {
   ]
 }
 
-// var teams = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"]
-// var experts = ['1', '2', '3', '4', '5', '6'];
-// var preferences = [{
-//     team: "A",
-//     pref: ["2", "F", "3", "N", "B"]
-//   },
-//   {
-//     team: "B",
-//     pref: ["H", "1", "K", "D", "N"]
-//   },
-//   {
-//     team: "C",
-//     pref: ["D", "E", "G", "P", "M"]
-//   },
-//   {
-//     team: "D",
-//     pref: ["5", "E", "M", "K", "J"]
-//   },
-//   {
-//     team: "E",
-//     pref: ["F", "N", "K", "5", "L"]
-//   },
-//   {
-//     team: "F",
-//     pref: ["O", "A", "B", "D", "2"]
-//   },
-//   {
-//     team: "G",
-//     pref: ["2", "D", "H", "F", "E"]
-//   },
-//   {
-//     team: "H",
-//     pref: ["1", "O", "M", "D", "P"]
-//   },
-//   {
-//     team: "I",
-//     pref: ["D", "P", "G", "O", "C"]
-//   },
-//   {
-//     team: "J",
-//     pref: ["E", "L", "3", "C", "G"]
-//   },
-//   {
-//     team: "L",
-//     pref: ["D", "K", "C", "P", "I"]
-//   },
-//   {
-//     team: "K",
-//     pref: ["D", "M", "O", "4", "H"]
-//   },
-//   {
-//     team: "M",
-//     pref: ["P", "4", "G", "N", "C"]
-//   },
-//   {
-//     team: "N",
-//     pref: ["L", "D", "J", "I", "A"]
-//   },
-//   {
-//     team: "O",
-//     pref: ["D", "F", "L", "H", "2"]
-//   },
-//   {
-//     team: "P",
-//     pref: ["N", "5", "I", "B", "O"]
-//   }
-// ];
-// const initPrefs = JSON.parse(JSON.stringify(preferences));
-// console.log(preferences);
-// var prefCount = 15;
 function removeMatchedPrefs(p) {
   for (var i = 0; i < p.length; i++) {
     console.log(p[i].team);
@@ -404,47 +334,7 @@ experts.push(expert.id);
   resultsUpdated = removeMatchedPrefs(results);
 
   var results2 = algorithm(resultsUpdated, 14, 1, experts, teams);
-  
+
   return results2
 }
 runAlgorithm(input);
-
-// const populateHTML = async () => {
-//   const resultFinal = await runAlgorithm();
-//
-//   function generateTableHead(table, data) {
-//     let thead = table.createTHead();
-//     let row = thead.insertRow();
-//     for (let key of data) {
-//       let th = document.createElement("th");
-//       let text = document.createTextNode(key);
-//       th.appendChild(text);
-//       row.appendChild(th);
-//     }
-//   }
-//
-//   function generateTable(table, data) {
-//     for (let element of data) {
-//       let row = table.insertRow();
-//       for (key in element) {
-//         let cell = row.insertCell();
-//         let text = document.createTextNode(element[key]);
-//         cell.appendChild(text);
-//       }
-//     }
-//   }
-//
-//   var tablePrefElement = document.getElementById("preferencesTable");
-//   let dataPref = Object.keys(initPrefs[0]);
-//   generateTable(tablePrefElement, initPrefs);
-//   generateTableHead(tablePrefElement, dataPref);
-//
-//   var tableElement = document.getElementById("resultTable");
-//   console.log(tableElement)
-//   let data = Object.keys(resultFinal[0]);
-//   generateTable(tableElement, resultFinal); // generate the table first
-//   generateTableHead(tableElement, data);
-//
-//   // do something else here after firstFunction completes
-// }
-// populateHTML();
