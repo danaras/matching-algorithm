@@ -165,22 +165,18 @@ var input = {
             "type": "team"
         },
         {
-            "name": "China",
-            "id": "3lalala6-cf63-463c-a59d-e8a009435cdc",
+            "name": "India",
+            "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
             "type": "team"
         },
         {
-            "name": "Korea",
-            "id": "hmmmm-e86c-4002-8da6-dffac68a545b",
+            "name": "Abkhazia",
+            "id": "eace22ad-bafa-4059-9e93-cd84827900d2",
             "type": "team"
         }
     ],
     "experts": [
-        {
-            "name": "Lisa Simpson",
-            "id": "tevinmcquilkin@gmail.com",
-            "type": "expert"
-        }
+
     ],
     "pref": [
         {
@@ -188,20 +184,19 @@ var input = {
             "pref": []
         },
         {
-            "team": "3lalala6-cf63-463c-a59d-e8a009435cdc",
-            "pref": []
-        },
-
-        {
             "team": "6d9a6a54-e86c-4002-8da6-dffac68a545b",
             "pref": [
                 "375da6f6-cf63-463c-a59d-e8a009435cdc",
-                "tevinmcquilkin@gmail.com"
             ]
-        },        {
-                    "team": "hmmmm-e86c-4002-8da6-dffac68a545b",
-                    "pref": []
-                }
+        },
+        {
+            "team": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
+            "pref": []
+        },
+        {
+            "team": "eace22ad-bafa-4059-9e93-cd84827900d2",
+            "pref": []
+        }
     ]
 }
 
@@ -302,15 +297,15 @@ function algorithm(p, prefCount, matchOrder, experts, teams, startTime) {
       //   }).type == "expert"){
       //
       //   }
-            //console.log(initTeam)
+            console.log(initTeam)
       var partner = p.find(team => {
         return team.team === initTeam.pref[x]
       });
-      //console.log("xxxxx")
+      console.log("xxxxx")
 
-      //console.log(JSON.stringify(p))
-      //console.log(x)
-      ////console.log("partner: " + partner.team);
+      console.log(JSON.stringify(p))
+      console.log(x)
+      //console.log("partner: " + partner.team);
       if (partner.matched == false) {
         p.find(team => {
           return team.team === initTeam.pref[x]
@@ -358,9 +353,9 @@ function algorithm(p, prefCount, matchOrder, experts, teams, startTime) {
       }
       x++;
       var currentTime = Date.now()/1000;
-      //console.log(currentTime - startTime)
+      console.log(currentTime - startTime)
       if(currentTime - startTime > 5){
-        //console.log("OVERTIME, RESTARTING")
+        console.log("OVERTIME, RESTARTING")
         p = false
         return p
       }
@@ -385,19 +380,19 @@ function runAlgorithm(initInput) {
     teams.push(team.id);
   });
   var teamsLength = teams.length;
-  //console.log("TEAMS")
-  //console.log(teamsLength)
+  console.log("TEAMS")
+  console.log(teams)
   var expertsObj = obj.experts;
   var experts = [];
   expertsObj.forEach(function(expert) {
     experts.push(expert.id);
   });
-  //console.log("EXPERTS")
-  //console.log(experts)
+  console.log("EXPERTS")
+  console.log(experts)
 
   var preferences = obj.pref;
-  ////console.log("PREFERENCES")
-  ////console.log(preferences);
+  console.log("PREFERENCES")
+  console.log(preferences);
 
   var preferences2 = randomizeRemainingPrefs(preferences, teams, teamsLength);
   ////console.log("xxxxxxxxxxxxxxxxx");
@@ -419,6 +414,7 @@ function runAlgorithm(initInput) {
   var matches = []
   results2.forEach(function(result) {
     matches.push({
+      "type":result.type,
       "team": result.team,
       "partners": result.partner
     });
@@ -427,8 +423,8 @@ function runAlgorithm(initInput) {
   });
 
 
-  //console.log("MATCHES")
-  //console.log(matches)
+  console.log("MATCHES")
+  console.log(matches)
   return matches
 }
 runAlgorithm(input);
