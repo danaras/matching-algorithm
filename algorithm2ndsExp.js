@@ -1,211 +1,61 @@
-// var input = {
-//   "teams": [{
-//     "type": "team",
-//     "id": "A",
-//     "name": "team-A"
-//   }, {
-//     "type": "team",
-//     "id": "B",
-//     "name": "team-B"
-//   }, {
-//     "type": "team",
-//     "id": "C",
-//     "name": "team-C"
-//   }, {
-//     "type": "team",
-//     "id": "D",
-//     "name": "team-D"
-//   }, {
-//     "type": "team",
-//     "id": "E",
-//     "name": "team-E"
-//   }, {
-//     "type": "team",
-//     "id": "F",
-//     "name": "team-F"
-//   }, {
-//     "type": "team",
-//     "id": "G",
-//     "name": "team-G"
-//   }, {
-//     "type": "team",
-//     "id": "H",
-//     "name": "team-H"
-//   }, {
-//     "type": "team",
-//     "id": "I",
-//     "name": "team-I"
-//   }, {
-//     "type": "team",
-//     "id": "J",
-//     "name": "team-J"
-//   }, {
-//     "type": "team",
-//     "id": "K",
-//     "name": "team-K"
-//   }, {
-//     "type": "team",
-//     "id": "L",
-//     "name": "team-L"
-//   }, {
-//     "type": "team",
-//     "id": "M",
-//     "name": "team-M"
-//   }, {
-//     "type": "team",
-//     "id": "N",
-//     "name": "team-N"
-//   }, {
-//     "type": "team",
-//     "id": "O",
-//     "name": "team-O"
-//   }, {
-//     "type": "team",
-//     "id": "P",
-//     "name": "team-P"
-//   }],
-//   "experts": [{
-//     "type": "expert",
-//     "id": "1",
-//     "name": "expert-1"
-//   }, {
-//     "type": "expert",
-//     "id": "2",
-//     "name": "expert-2"
-//   }, {
-//     "type": "expert",
-//     "id": "3",
-//     "name": "expert-3"
-//   }, {
-//     "type": "expert",
-//     "id": "4",
-//     "name": "expert-4"
-//   }, {
-//     "type": "expert",
-//     "id": "5",
-//     "name": "expert-5"
-//   }],
-//   "pref": [{
-//       team: "A",
-//       pref: ["2", "F", "3", "N", "B"]
-//     },
-//     {
-//       team: "B",
-//       pref: ["H", "1", "K", "D", "N"]
-//     },
-//     {
-//       team: "C",
-//       pref: ["D", "E", "G", "P", "M"]
-//     },
-//     {
-//       team: "D",
-//       pref: ["5", "E", "M", "K", "J"]
-//     },
-//     {
-//       team: "E",
-//       pref: ["F", "N", "K", "5", "L"]
-//     },
-//     {
-//       team: "F",
-//       pref: ["O", "A", "B", "D", "2"]
-//     },
-//     {
-//       team: "G",
-//       pref: ["2", "D", "H", "F", "E"]
-//     },
-//     {
-//       team: "H",
-//       pref: ["1", "O", "M", "D", "P"]
-//     },
-//     {
-//       team: "I",
-//       pref: ["D", "P", "G", "O", "C"]
-//     },
-//     {
-//       team: "J",
-//       pref: ["E", "L", "3", "C", "G"]
-//     },
-//     {
-//       team: "L",
-//       pref: ["D", "K", "C", "P", "I"]
-//     },
-//     {
-//       team: "K",
-//       pref: ["D", "M", "O", "4", "H"]
-//     },
-//     {
-//       team: "M",
-//       pref: ["P", "4", "G", "N", "C"]
-//     },
-//     {
-//       team: "N",
-//       pref: ["L", "D", "J", "I", "A"]
-//     },
-//     {
-//       team: "O",
-//       pref: ["D", "F", "L", "H", "2"]
-//     },
-//     {
-//       team: "P",
-//       pref: ["N", "5", "I", "B", "O"]
-//     }
-//   ]
-// }
-
 var input = {
-    "teams": [
-        {
-            "name": "United States",
-            "id": "375da6f6-cf63-463c-a59d-e8a009435cdc",
-            "type": "team"
-        },
-        {
-            "name": "Brazil",
-            "id": "6d9a6a54-e86c-4002-8da6-dffac68a545b",
-            "type": "team"
-        },
-        {
-            "name": "India",
-            "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
-            "type": "team"
-        },
-        {
-            "name": "Abkhazia",
-            "id": "eace22ad-bafa-4059-9e93-cd84827900d2",
-            "type": "team"
-        }
-    ],
-    "experts": [
+  "teams": [{
+      "name": "United States",
+      "id": "375da6f6-cf63-463c-a59d-e8a009435cdc",
+      "type": "team",
+      "participants": ["danara@sharedstudios.com", "ahmed@sharedstudios.com"]
+    },
+    {
+      "name": "Brazil",
+      "id": "6d9a6a54-e86c-4002-8da6-dffac68a545b",
+      "type": "team",
+      "participants": ["siam@sharedstudios.com", "tevin@sharedstudios.com"]
+    },
+    {
+      "name": "India",
+      "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
+      "type": "team",
+      "participants": ["luke@sharedstudios.com", "teun@sharedstudios.com"]
+    },
+    {
+      "name": "Abkhazia",
+      "id": "eace22ad-bafa-4059-9e93-cd84827900d2",
+      "type": "team",
+      "participants": ["nina@sharedstudios.com", "nicole@sharedstudios.com"]
+    }
+  ],
+  "experts": [{
+      "name": "expert 1",
+      "id": "expert@gmail.com",
+      "type": "expert"
+    }
 
-    ],
-    "pref": [
-        {
-            "team": "375da6f6-cf63-463c-a59d-e8a009435cdc",
-            "pref": []
-        },
-        {
-            "team": "6d9a6a54-e86c-4002-8da6-dffac68a545b",
-            "pref": [
-                "375da6f6-cf63-463c-a59d-e8a009435cdc",
-            ]
-        },
-        {
-            "team": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
-            "pref": []
-        },
-        {
-            "team": "eace22ad-bafa-4059-9e93-cd84827900d2",
-            "pref": []
-        }
-    ]
+  ],
+  "pref": [{
+      "id": "375da6f6-cf63-463c-a59d-e8a009435cdc",
+      "pref": ["expert@gmail.com"]
+    },
+    {
+      "id": "6d9a6a54-e86c-4002-8da6-dffac68a545b",
+      "pref": [
+        "375da6f6-cf63-463c-a59d-e8a009435cdc"
+      ]
+    },
+    {
+      "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
+      "pref": []
+    },
+    {
+      "id": "eace22ad-bafa-4059-9e93-cd84827900d2",
+      "pref": []
+    }
+  ]
 }
 
+
 function removeMatchedPrefs(p) {
-  for (var i = 0; i < p.length; i++) {
-    ////console.log(p[i].team);
-    ////console.log(p[i].partner[0]);
-    var restPref = p[i].pref.filter(x => !p[i].partner[0].includes(x));
-    ////console.log(restPref);
+  for (let i = 0; i < p.length; i++) {
+    let restPref = p[i].pref.filter(x => !p[i].partner[0].includes(x));
     p[i].pref = restPref;
   }
   return p
@@ -213,14 +63,14 @@ function removeMatchedPrefs(p) {
 }
 
 function prefersPrevPartnerOverP(preferences, choosingTeam, prevPartner, curPartner, prefCount) {
-  for (var i = 0; i < prefCount; i++) {
+  for (let i = 0; i < prefCount; i++) {
     if (preferences.find(team => {
-        return team.team === choosingTeam
+        return team.id === choosingTeam
       }).pref[i] == prevPartner) {
       return true
     }
     if (preferences.find(team => {
-        return team.team === choosingTeam
+        return team.id === choosingTeam
       }).pref[i] == curPartner) {
       return false
     }
@@ -235,42 +85,29 @@ function shuffle(array) {
 }
 
 function randomizeRemainingPrefs(p, teams, teamsLength) {
-  for (var i = 0; i < p.length; i++) {
+  for (let i = 0; i < p.length; i++) {
 
-    var remainingPrefs = teams.filter(x => !p[i].pref.includes(x));
-    remainingPrefs = remainingPrefs.filter(x => !p[i].team.includes(x));
-
-    ////console.log("Initial team:")
-    ////console.log(p[i]);
-    ////console.log("Initial remaining preferences")
-    ////console.log(remainingPrefs);
+    let remainingPrefs = teams.filter(x => !p[i].pref.includes(x));
+    remainingPrefs = remainingPrefs.filter(x => !p[i].id.includes(x));
     shuffle(remainingPrefs);
     p[i].pref = p[i].pref.concat(remainingPrefs);
-    // p[i].pref = p[i].pref.slice(0, teamsLength-1);
-    // //console.log(p[i].pref)
-    // //console.log(teamsLength-1)
-
-    ////console.log("Final team:")
-    ////console.log(p[i]);
-    ////console.log("Final remaining preferences")
-    ////console.log(remainingPrefs);
   }
   return p
 }
 
 function algorithm(p, prefCount, matchOrder, experts, teams, startTime) {
 
-  for (var i = 0; i < p.length; i++) {
+  for (let i = 0; i < p.length; i++) {
     p[i]["matched"] = false;
     if (matchOrder == 0) {
       p[i]["partner"] = ["", ""];
-      p[i]["type"] = "participant";
+      p[i]["type"] = "team";
     }
   }
   if (matchOrder == 0) {
     for (e = 0; e < experts.length; e++) {
       p.push({
-        team: experts[e],
+        id: experts[e],
         pref: [],
         matched: false,
         partner: ["", ""],
@@ -279,152 +116,182 @@ function algorithm(p, prefCount, matchOrder, experts, teams, startTime) {
     }
   }
 
-  // var freeCount = p.length;
   while (p.find(team => {
-      return team.matched === false && team.type === "participant"
+      return team.matched === false && team.type === "team"
     })) {
-    var initTeam = p.find(team => {
-      return team.matched === false && team.type === "participant"
+    let initTeam = p.find(team => {
+      return team.matched === false && team.type === "team"
     });
-    var initTeamName = initTeam.team;
-    ////console.log("initial team: " + initTeamName);
-    var x = 0;
-    while (x < prefCount && p.find(team => {
-        return team.team === initTeamName
-      }).matched == false) {
-      // if(p.find(team => {
-      //     return team.team === initTeamName
-      //   }).type == "expert"){
-      //
-      //   }
-            console.log(initTeam)
-      var partner = p.find(team => {
-        return team.team === initTeam.pref[x]
-      });
-      console.log("xxxxx")
 
-      console.log(JSON.stringify(p))
-      console.log(x)
-      //console.log("partner: " + partner.team);
+    let initTeamName = initTeam.id;
+    let x = 0;
+    while (x < prefCount && p.find(team => {
+        return team.id === initTeamName
+      }).matched == false) {
+      let partner = p.find(team => {
+        return team.id === initTeam.pref[x]
+      });
+
       if (partner.matched == false) {
         p.find(team => {
-          return team.team === initTeam.pref[x]
+          return team.id === initTeam.pref[x]
         }).matched = true;
         p.find(team => {
-          return team.team === initTeamName
+          return team.id === initTeamName
         }).matched = true;
         p.find(team => {
-          return team.team === initTeam.pref[x]
+          return team.id === initTeam.pref[x]
         }).partner[matchOrder] = initTeamName;
         p.find(team => {
-          return team.team === initTeamName
-        }).partner[matchOrder] = partner.team;
-        // freeCount -= 2
-        ////console.log("not matched partner");
-
+          return team.id === initTeamName
+        }).partner[matchOrder] = partner.id;
       } else {
-        //console.log("matched partner");
 
-        var prevPartner = p.find(team => {
-          return team.team === partner.team
+        let prevPartner = p.find(team => {
+          return team.id === partner.id
         }).partner[matchOrder];
-        if (prefersPrevPartnerOverP(p, partner.team, prevPartner, initTeamName, prefCount) == false) {
-          ////console.log("old partner: " + prevPartner + ", new partner: " + partner.team);
-
+        if (prefersPrevPartnerOverP(p, partner.id, prevPartner, initTeamName, prefCount) == false) {
           p.find(team => {
-            return team.team === partner.team
+            return team.id === partner.id
           }).matched = true;
           p.find(team => {
-            return team.team === initTeamName
+            return team.id === initTeamName
           }).matched = true;
           p.find(team => {
-            return team.team === partner.team
+            return team.id === partner.id
           }).partner[matchOrder] = initTeamName;
           p.find(team => {
-            return team.team === initTeamName
-          }).partner[matchOrder] = partner.team;
+            return team.id === initTeamName
+          }).partner[matchOrder] = partner.id;
           p.find(team => {
-            return team.team === prevPartner
+            return team.id === prevPartner
           }).matched = false;
           p.find(team => {
-            return team.team === prevPartner
+            return team.id === prevPartner
           }).partner[matchOrder] = "";
         }
       }
       x++;
-      var currentTime = Date.now()/1000;
-      console.log(currentTime - startTime)
-      if(currentTime - startTime > 3){
+      let currentTime = Date.now() / 1000;
+      if (currentTime - startTime > 3) {
         console.log("OVERTIME, RESTARTING")
         p = false
         return p
       }
     }
-    ////console.log(freeCount);
-    ////console.log(p);
   }
   return p
 }
 
-function runAlgorithm(initInput) {
-  ////console.log(obj);
-  var obj = JSON.parse(JSON.stringify(initInput))
-  //console.log("start time")
-  var startTime = Date.now()/1000;
-  //console.log(startTime)
-
-  var teamsObj = obj.teams;
-
-  var teams = [];
+function runAlgorithm(initInput, stuck) {
+  let obj = JSON.parse(JSON.stringify(initInput))
+  let startTime = Date.now() / 1000;
+  let teamsObj = obj.teams;
+  let teams = [];
   teamsObj.forEach(function(team) {
     teams.push(team.id);
   });
-  var teamsLength = teams.length;
+  let teamsLength = teams.length;
   console.log("TEAMS")
   console.log(teams)
-  var expertsObj = obj.experts;
-  var experts = [];
+  let expertsObj = obj.experts;
+  let experts = [];
   expertsObj.forEach(function(expert) {
     experts.push(expert.id);
   });
   console.log("EXPERTS")
   console.log(experts)
 
-  var preferences = obj.pref;
+  let preferences = obj.pref;
   console.log("PREFERENCES")
-  console.log(preferences);
-
-  var preferences2 = randomizeRemainingPrefs(preferences, teams, teamsLength);
-  ////console.log("xxxxxxxxxxxxxxxxx");
-  ////console.log(preferences2);
-
-  var results = algorithm(preferences2, teamsLength-1, 0, experts, teams, startTime);
-  if(!results){
-      return runAlgorithm(initInput);
-    }
-
-  // ////console.log(results);
-  var resultsUpdated = removeMatchedPrefs(results);
-
-  var results2 = algorithm(resultsUpdated, teamsLength-2, 1, experts, teams, startTime);
-  if(!results2){
-      return runAlgorithm(initInput);
-
-    }
-  var matches = []
+  console.log(JSON.stringify(preferences));
+  if (stuck) {
+    console.log("Removing expert");
+    preferences.forEach(function(pr) {
+      let common = experts.filter(x => pr.pref.includes(x));
+      if (common.length > 0) {
+        console.log("expert found")
+        console.log(common);
+        let randomExp = common[Math.floor(Math.random() * common.length)];
+        const index = pr.pref.indexOf(randomExp);
+        if (index > -1) {
+          pr.pref.splice(index, 1);
+          console.log("expert removed")
+        }
+        return
+      }
+    })
+  }
+  let preferences2 = randomizeRemainingPrefs(preferences, teams, teamsLength);
+  let results = algorithm(preferences2, teamsLength - 1, 0, experts, teams, startTime);
+  if (!results) {
+    let stuck = true;
+    console.log("xxxxxxxxxxxxxxxx")
+    console.log("Removing expert and running algorithm again")
+    return runAlgorithm(initInput, stuck);
+  }
+  let resultsUpdated = removeMatchedPrefs(results);
+  let results2 = algorithm(resultsUpdated, teamsLength - 2, 1, experts, teams, startTime);
+  if (!results2) {
+    let stuck = true;
+    console.log("xxxxxxxxxxxxxxxx")
+    console.log("Removing expert and running algorithm again")
+    return runAlgorithm(initInput, stuck);
+  }
+  let matches = []
   results2.forEach(function(result) {
     matches.push({
-      "type":result.type,
-      "team": result.team,
+      "type": result.type,
+      "id": result.id,
       "partners": result.partner
     });
-    // var str = ""
-    // ////console.log(str.concat('{"team":',result.team,', "partners":',result.partner,'}'));
   });
+  let output = []
+  matches.forEach(function(match) {
+    let teamID = match.id;
+    let team = initInput.teams.find(o => {
+      return o.id === teamID
+    });
+    let participants = []
+    // console.log(team)
+    if (team) {
+      participants = team.participants;
+    }
+    let pref = []
+    match.partners.forEach(function(part) {
+      if (part != "") {
+        let partnerType = "";
+        let partnerName = "";
+        let partnerId = part;
+        if (experts.includes(part)) {
+          partnerType = "expert"
+          partnerName = initInput.experts.find(o => {
+            return o.id === partnerId
+          }).name;
+        } else {
+          partnerType = "team"
+          partnerName = initInput.teams.find(o => {
+            return o.id === partnerId
+          }).name;
+        }
+        let partnerObject = {
+          "type": partnerType,
+          "name": partnerName,
+          "id": partnerId
+        }
+        pref.push(partnerObject);
+      }
+    })
+    let teamObject = {
+      "id": teamID,
+      "participants": participants,
+      "pref": pref
+    }
+    output.push(teamObject)
 
-
-  console.log("MATCHES")
-  console.log(matches)
-  return matches
+  })
+  console.log("OUTPUT OF ALGORITHM")
+  console.log(output)
+  return output
 }
-runAlgorithm(input);
+runAlgorithm(input, false);
