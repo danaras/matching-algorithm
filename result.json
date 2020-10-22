@@ -1,0 +1,53 @@
+[{
+  "id": "375da6f6-cf63-463c-a59d-e8a009435cdc",
+  "participants": ["danara@sharedstudios.com", "ahmed@sharedstudios.com"],
+  "pref": [{
+    "type": "team",
+    "name": "India",
+    "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95"
+  }, {
+    "type": "team",
+    "name": "Abkhazia",
+    "id": "eace22ad-bafa-4059-9e93-cd84827900d2"
+  }]
+}, {
+  "id": "6d9a6a54-e86c-4002-8da6-dffac68a545b",
+  "participants": ["siam@sharedstudios.com", "tevin@sharedstudios.com"],
+  "pref": [{
+    "type": "team",
+    "name": "Abkhazia",
+    "id": "eace22ad-bafa-4059-9e93-cd84827900d2"
+  }, {
+    "type": "team",
+    "name": "India",
+    "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95"
+  }]
+}, {
+  "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
+  "participants": ["luke@sharedstudios.com", "teun@sharedstudios.com"],
+  "pref": [{
+    "type": "team",
+    "name": "United States",
+    "id": "375da6f6-cf63-463c-a59d-e8a009435cdc"
+  }, {
+    "type": "team",
+    "name": "Brazil",
+    "id": "6d9a6a54-e86c-4002-8da6-dffac68a545b"
+  }]
+}, {
+  "id": "eace22ad-bafa-4059-9e93-cd84827900d2",
+  "participants": ["nina@sharedstudios.com", "nicole@sharedstudios.com"],
+  "pref": [{
+    "type": "team",
+    "name": "Brazil",
+    "id": "6d9a6a54-e86c-4002-8da6-dffac68a545b"
+  }, {
+    "type": "team",
+    "name": "United States",
+    "id": "375da6f6-cf63-463c-a59d-e8a009435cdc"
+  }]
+}, {
+  "id": "expert@gmail.com",
+  "participants": [],
+  "pref": []
+}]

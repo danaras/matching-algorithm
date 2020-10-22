@@ -291,7 +291,7 @@ function runAlgorithm(initInput, stuck) {
 
   })
   console.log("OUTPUT OF ALGORITHM")
-  console.log(output)
+  console.log(JSON.stringify(output))
   return output
 }
 runAlgorithm(input, false);
