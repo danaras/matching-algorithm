@@ -1,57 +1,259 @@
+// var input = {
+//   "teams": [{
+//       "name": "United States",
+//       "id": "375da6f6-cf63-463c-a59d-e8a009435cdc",
+//       "type": "team",
+//       "participants": ["danara@sharedstudios.com", "ahmed@sharedstudios.com"]
+//     },
+//     {
+//       "name": "Brazil",
+//       "id": "6d9a6a54-e86c-4002-8da6-dffac68a545b",
+//       "type": "team",
+//       "participants": ["siam@sharedstudios.com", "tevin@sharedstudios.com"]
+//     },
+//     {
+//       "name": "India",
+//       "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
+//       "type": "team",
+//       "participants": ["luke@sharedstudios.com", "teun@sharedstudios.com"]
+//     },
+//     {
+//       "name": "Abkhazia",
+//       "id": "eace22ad-bafa-4059-9e93-cd84827900d2",
+//       "type": "team",
+//       "participants": ["nina@sharedstudios.com", "nicole@sharedstudios.com"]
+//     }
+//   ],
+//   "experts": [{
+//       "name": "expert 1",
+//       "id": "expert@gmail.com",
+//       "type": "expert"
+//     }
+//
+//   ],
+//   "pref": [{
+//       "id": "375da6f6-cf63-463c-a59d-e8a009435cdc",
+//       "pref": ["expert@gmail.com"]
+//     },
+//     {
+//       "id": "6d9a6a54-e86c-4002-8da6-dffac68a545b",
+//       "pref": [
+//         "375da6f6-cf63-463c-a59d-e8a009435cdc"
+//       ]
+//     },
+//     {
+//       "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
+//       "pref": []
+//     },
+//     {
+//       "id": "eace22ad-bafa-4059-9e93-cd84827900d2",
+//       "pref": []
+//     }
+//   ]
+// }
 var input = {
-  "teams": [{
-      "name": "United States",
-      "id": "375da6f6-cf63-463c-a59d-e8a009435cdc",
-      "type": "team",
-      "participants": ["danara@sharedstudios.com", "ahmed@sharedstudios.com"]
-    },
-    {
-      "name": "Brazil",
-      "id": "6d9a6a54-e86c-4002-8da6-dffac68a545b",
-      "type": "team",
-      "participants": ["siam@sharedstudios.com", "tevin@sharedstudios.com"]
-    },
-    {
-      "name": "India",
-      "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
-      "type": "team",
-      "participants": ["luke@sharedstudios.com", "teun@sharedstudios.com"]
-    },
-    {
-      "name": "Abkhazia",
-      "id": "eace22ad-bafa-4059-9e93-cd84827900d2",
-      "type": "team",
-      "participants": ["nina@sharedstudios.com", "nicole@sharedstudios.com"]
-    }
-  ],
-  "experts": [{
-      "name": "expert 1",
-      "id": "expert@gmail.com",
-      "type": "expert"
-    }
-
-  ],
-  "pref": [{
-      "id": "375da6f6-cf63-463c-a59d-e8a009435cdc",
-      "pref": ["expert@gmail.com"]
-    },
-    {
-      "id": "6d9a6a54-e86c-4002-8da6-dffac68a545b",
-      "pref": [
-        "375da6f6-cf63-463c-a59d-e8a009435cdc"
-      ]
-    },
-    {
-      "id": "72a74a11-51b3-4c44-a160-c9b9013b4f95",
-      "pref": []
-    },
-    {
-      "id": "eace22ad-bafa-4059-9e93-cd84827900d2",
-      "pref": []
-    }
-  ]
+    "total_pref": 14,
+    "total_teams": 14,
+    "teams": [
+        {
+            "name": "Turkey",
+            "id": "0b1e4db1-05a8-451e-b899-4544466d354f",
+            "type": "team",
+            "participants": [
+                "danara@sharedstudios.com"
+            ]
+        },
+        {
+            "name": "Belgium",
+            "id": "18159330-003d-4966-8ef5-1252b74d977f",
+            "type": "team",
+            "participants": [
+                "veronika.zubo@foreignpolicy.com",
+                "zgjim.gjonbalaj@foreignpolicy.com"
+            ]
+        },
+        {
+            "name": "South Africa",
+            "id": "1a46a436-637b-44a5-8b4e-3d58460c2d95",
+            "type": "team",
+            "participants": [
+                "sherri.greeves@foreignpolicy.com",
+                "sohrab.azad@foreignpolicy.com",
+                "susan.sadigova@foreignpolicy.com"
+            ]
+        },
+        {
+            "name": "Japan",
+            "id": "500e92a9-f7c9-49c2-91c4-47086967cdb5",
+            "type": "team",
+            "participants": [
+                "rachel.mines@foreignpolicy.com",
+                "rob.sachs@foreignpolicy.com"
+            ]
+        },
+        {
+            "name": "Barbados",
+            "id": "5c998b84-daf7-4397-a6c5-01bb3731a9b8",
+            "type": "team",
+            "participants": [
+                "kara.francois@foreignpolicy.com",
+                "laurel.fioravanti@foreignpolicy.com"
+            ]
+        },
+        {
+            "name": "United Arab Emirates",
+            "id": "5ecca2f7-05cb-4af4-a621-387c8eec8d18",
+            "type": "team",
+            "participants": [
+                "lori.kelley@foreignpolicy.com",
+                "leah.danville@foreignpolicy.com"
+            ]
+        },
+        {
+            "name": "Abkhazia",
+            "id": "7a999173-1438-4bb3-86d3-1b886839216b",
+            "type": "team",
+            "participants": [
+                "isabel.schmidt@foreignpolicy.com",
+                "jason.lee@foreignpolicy.com",
+                "siam@gmail.com"
+            ]
+        },
+        {
+            "name": "Russia",
+            "id": "80fc0981-5604-4d8a-b235-ad1f1d71cd1b",
+            "type": "team",
+            "participants": [
+                "helen.you@foreignpolicy.com",
+                "hannah.lynch@foreignpolicy.com"
+            ]
+        },
+        {
+            "name": "Poland",
+            "id": "8e360d1a-5360-4ac7-b044-ea75eb00da52",
+            "type": "team",
+            "participants": [
+                "francis.king@foreignpolicy.com",
+                "diana.marrero@foreignpolicy.com"
+            ]
+        },
+        {
+            "name": "South Korea",
+            "id": "95da4555-5d4e-492b-9ddd-d34655c85cc1",
+            "type": "team",
+            "participants": [
+                "claire.furbush@foreignpolicy.com",
+                "christian.perez@foreignpolicy.com"
+            ]
+        },
+        {
+            "name": "Netherlands",
+            "id": "9e418671-3c9a-42ef-9327-2873715df9ae",
+            "type": "team",
+            "participants": [
+                "tevin@sharedstudios.com",
+                "tevinmcquilkin@gmail.com"
+            ]
+        },
+        {
+            "name": "China",
+            "id": "a8913a91-4598-45cc-bfef-555846c7f185",
+            "type": "team",
+            "participants": [
+                "caitlin.oconnell@foreignpolicy.com",
+                "catherine.snow@foreignpolicy.com"
+            ]
+        },
+        {
+            "name": "Sweden",
+            "id": "edcb9a37-87d6-4896-b20e-0d01c20014e0",
+            "type": "team",
+            "participants": [
+                "andrew.baughman@foreignpolicy.com",
+                "bryan.flynn@foreignpolicy.com"
+            ]
+        },
+        {
+            "name": "Canada",
+            "id": "fd71b94c-5105-4a03-99be-f7cba230ba0a",
+            "type": "team",
+            "participants": [
+                "adam.griffiths@foreignpolicy.com",
+                "allison.carlson@foreignpolicy.com"
+            ]
+        }
+    ],
+    "experts": [
+        {
+            "name": "Expert2 Expert2",
+            "id": "expert2@sharedstudios.com",
+            "type": "expert"
+        },
+        {
+            "name": "Expert 1 Expert 1",
+            "id": "expert@sharedstudios.com",
+            "type": "expert"
+        }
+    ],
+    "pref": [
+        {
+            "id": "0b1e4db1-05a8-451e-b899-4544466d354f",
+            "pref": []
+        },
+        {
+            "id": "18159330-003d-4966-8ef5-1252b74d977f",
+            "pref": []
+        },
+        {
+            "id": "1a46a436-637b-44a5-8b4e-3d58460c2d95",
+            "pref": []
+        },
+        {
+            "id": "500e92a9-f7c9-49c2-91c4-47086967cdb5",
+            "pref": []
+        },
+        {
+            "id": "5c998b84-daf7-4397-a6c5-01bb3731a9b8",
+            "pref": []
+        },
+        {
+            "id": "5ecca2f7-05cb-4af4-a621-387c8eec8d18",
+            "pref": []
+        },
+        {
+            "id": "7a999173-1438-4bb3-86d3-1b886839216b",
+            "pref": []
+        },
+        {
+            "id": "80fc0981-5604-4d8a-b235-ad1f1d71cd1b",
+            "pref": []
+        },
+        {
+            "id": "8e360d1a-5360-4ac7-b044-ea75eb00da52",
+            "pref": []
+        },
+        {
+            "id": "95da4555-5d4e-492b-9ddd-d34655c85cc1",
+            "pref": []
+        },
+        {
+            "id": "9e418671-3c9a-42ef-9327-2873715df9ae",
+            "pref": []
+        },
+        {
+            "id": "a8913a91-4598-45cc-bfef-555846c7f185",
+            "pref": []
+        },
+        {
+            "id": "edcb9a37-87d6-4896-b20e-0d01c20014e0",
+            "pref": []
+        },
+        {
+            "id": "fd71b94c-5105-4a03-99be-f7cba230ba0a",
+            "pref": []
+        }
+    ]
 }
-
 
 function removeMatchedPrefs(p) {
   for (let i = 0; i < p.length; i++) {
@@ -100,7 +302,7 @@ function algorithm(p, prefCount, matchOrder, experts, teams, startTime) {
   for (let i = 0; i < p.length; i++) {
     p[i]["matched"] = false;
     if (matchOrder == 0) {
-      p[i]["partner"] = ["", ""];
+      p[i]["partner"] = [undefined, undefined];
       p[i]["type"] = "team";
     }
   }
@@ -110,7 +312,7 @@ function algorithm(p, prefCount, matchOrder, experts, teams, startTime) {
         id: experts[e],
         pref: [],
         matched: false,
-        partner: ["", ""],
+        partner: [undefined, undefined],
         type: "expert"
       });
     }
@@ -168,7 +370,7 @@ function algorithm(p, prefCount, matchOrder, experts, teams, startTime) {
           }).matched = false;
           p.find(team => {
             return team.id === prevPartner
-          }).partner[matchOrder] = "";
+          }).partner[matchOrder] = undefined;
         }
       }
       x++;
@@ -259,9 +461,9 @@ function runAlgorithm(initInput, stuck) {
     }
     let pref = []
     match.partners.forEach(function(part) {
-      if (part != "") {
-        let partnerType = "";
-        let partnerName = "";
+      if (part != undefined) {
+        let partnerType = undefined;
+        let partnerName = undefined;
         let partnerId = part;
         if (experts.includes(part)) {
           partnerType = "expert"
@@ -279,6 +481,9 @@ function runAlgorithm(initInput, stuck) {
           "name": partnerName,
           "id": partnerId
         }
+        pref.push(partnerObject);
+      }else{
+        let partnerObject = undefined;
         pref.push(partnerObject);
       }
     })
