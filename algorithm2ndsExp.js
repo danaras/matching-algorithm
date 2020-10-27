@@ -454,10 +454,20 @@ function runAlgorithm(initInput, stuck) {
     let team = initInput.teams.find(o => {
       return o.id === teamID
     });
+    let expert = initInput.experts.find(o => {
+      return o.id === teamID
+    });
     let participants = []
+    let type = undefined;
+    let name = undefined;
     // console.log(team)
     if (team) {
       participants = team.participants;
+      type = "team"
+      name = team.name;
+    }else if (expert) {
+      type = "expert"
+      name = expert.name;
     }
     let pref = []
     match.partners.forEach(function(part) {
@@ -489,8 +499,11 @@ function runAlgorithm(initInput, stuck) {
     })
     let teamObject = {
       "id": teamID,
+      "name":name,
+      "type": type,
       "participants": participants,
       "pref": pref
+
     }
     output.push(teamObject)
 
