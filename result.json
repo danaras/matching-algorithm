@@ -1,10 +1,12 @@
 [{
   "id": "0b1e4db1-05a8-451e-b899-4544466d354f",
+  "name": "Turkey",
+  "type": "team",
   "participants": ["danara@sharedstudios.com"],
   "pref": [{
     "type": "team",
-    "name": "Japan",
-    "id": "500e92a9-f7c9-49c2-91c4-47086967cdb5"
+    "name": "United Arab Emirates",
+    "id": "5ecca2f7-05cb-4af4-a621-387c8eec8d18"
   }, {
     "type": "team",
     "name": "South Korea",
@@ -12,11 +14,13 @@
   }]
 }, {
   "id": "18159330-003d-4966-8ef5-1252b74d977f",
+  "name": "Belgium",
+  "type": "team",
   "participants": ["veronika.zubo@foreignpolicy.com", "zgjim.gjonbalaj@foreignpolicy.com"],
   "pref": [{
     "type": "team",
-    "name": "Poland",
-    "id": "8e360d1a-5360-4ac7-b044-ea75eb00da52"
+    "name": "Netherlands",
+    "id": "9e418671-3c9a-42ef-9327-2873715df9ae"
   }, {
     "type": "team",
     "name": "Russia",
@@ -24,71 +28,83 @@
   }]
 }, {
   "id": "1a46a436-637b-44a5-8b4e-3d58460c2d95",
+  "name": "South Africa",
+  "type": "team",
   "participants": ["sherri.greeves@foreignpolicy.com", "sohrab.azad@foreignpolicy.com", "susan.sadigova@foreignpolicy.com"],
   "pref": [{
     "type": "team",
-    "name": "Barbados",
-    "id": "5c998b84-daf7-4397-a6c5-01bb3731a9b8"
-  }, {
-    "type": "team",
-    "name": "Sweden",
-    "id": "edcb9a37-87d6-4896-b20e-0d01c20014e0"
-  }]
-}, {
-  "id": "500e92a9-f7c9-49c2-91c4-47086967cdb5",
-  "participants": ["rachel.mines@foreignpolicy.com", "rob.sachs@foreignpolicy.com"],
-  "pref": [{
-    "type": "team",
-    "name": "Turkey",
-    "id": "0b1e4db1-05a8-451e-b899-4544466d354f"
-  }, {
-    "type": "team",
-    "name": "United Arab Emirates",
-    "id": "5ecca2f7-05cb-4af4-a621-387c8eec8d18"
-  }]
-}, {
-  "id": "5c998b84-daf7-4397-a6c5-01bb3731a9b8",
-  "participants": ["kara.francois@foreignpolicy.com", "laurel.fioravanti@foreignpolicy.com"],
-  "pref": [{
-    "type": "team",
-    "name": "South Africa",
-    "id": "1a46a436-637b-44a5-8b4e-3d58460c2d95"
-  }, {
-    "type": "team",
-    "name": "Canada",
-    "id": "fd71b94c-5105-4a03-99be-f7cba230ba0a"
-  }]
-}, {
-  "id": "5ecca2f7-05cb-4af4-a621-387c8eec8d18",
-  "participants": ["lori.kelley@foreignpolicy.com", "leah.danville@foreignpolicy.com"],
-  "pref": [{
-    "type": "team",
-    "name": "Canada",
-    "id": "fd71b94c-5105-4a03-99be-f7cba230ba0a"
-  }, {
-    "type": "team",
-    "name": "Japan",
-    "id": "500e92a9-f7c9-49c2-91c4-47086967cdb5"
-  }]
-}, {
-  "id": "7a999173-1438-4bb3-86d3-1b886839216b",
-  "participants": ["isabel.schmidt@foreignpolicy.com", "jason.lee@foreignpolicy.com", "siam@gmail.com"],
-  "pref": [{
-    "type": "team",
-    "name": "Netherlands",
-    "id": "9e418671-3c9a-42ef-9327-2873715df9ae"
+    "name": "South Korea",
+    "id": "95da4555-5d4e-492b-9ddd-d34655c85cc1"
   }, {
     "type": "team",
     "name": "China",
     "id": "a8913a91-4598-45cc-bfef-555846c7f185"
   }]
 }, {
-  "id": "80fc0981-5604-4d8a-b235-ad1f1d71cd1b",
-  "participants": ["helen.you@foreignpolicy.com", "hannah.lynch@foreignpolicy.com"],
+  "id": "500e92a9-f7c9-49c2-91c4-47086967cdb5",
+  "name": "Japan",
+  "type": "team",
+  "participants": ["rachel.mines@foreignpolicy.com", "rob.sachs@foreignpolicy.com"],
   "pref": [{
+    "type": "team",
+    "name": "China",
+    "id": "a8913a91-4598-45cc-bfef-555846c7f185"
+  }, {
     "type": "team",
     "name": "Sweden",
     "id": "edcb9a37-87d6-4896-b20e-0d01c20014e0"
+  }]
+}, {
+  "id": "5c998b84-daf7-4397-a6c5-01bb3731a9b8",
+  "name": "Barbados",
+  "type": "team",
+  "participants": ["kara.francois@foreignpolicy.com", "laurel.fioravanti@foreignpolicy.com"],
+  "pref": [{
+    "type": "team",
+    "name": "Canada",
+    "id": "fd71b94c-5105-4a03-99be-f7cba230ba0a"
+  }, {
+    "type": "team",
+    "name": "Poland",
+    "id": "8e360d1a-5360-4ac7-b044-ea75eb00da52"
+  }]
+}, {
+  "id": "5ecca2f7-05cb-4af4-a621-387c8eec8d18",
+  "name": "United Arab Emirates",
+  "type": "team",
+  "participants": ["lori.kelley@foreignpolicy.com", "leah.danville@foreignpolicy.com"],
+  "pref": [{
+    "type": "team",
+    "name": "Turkey",
+    "id": "0b1e4db1-05a8-451e-b899-4544466d354f"
+  }, {
+    "type": "team",
+    "name": "Abkhazia",
+    "id": "7a999173-1438-4bb3-86d3-1b886839216b"
+  }]
+}, {
+  "id": "7a999173-1438-4bb3-86d3-1b886839216b",
+  "name": "Abkhazia",
+  "type": "team",
+  "participants": ["isabel.schmidt@foreignpolicy.com", "jason.lee@foreignpolicy.com", "siam@gmail.com"],
+  "pref": [{
+    "type": "team",
+    "name": "Russia",
+    "id": "80fc0981-5604-4d8a-b235-ad1f1d71cd1b"
+  }, {
+    "type": "team",
+    "name": "United Arab Emirates",
+    "id": "5ecca2f7-05cb-4af4-a621-387c8eec8d18"
+  }]
+}, {
+  "id": "80fc0981-5604-4d8a-b235-ad1f1d71cd1b",
+  "name": "Russia",
+  "type": "team",
+  "participants": ["helen.you@foreignpolicy.com", "hannah.lynch@foreignpolicy.com"],
+  "pref": [{
+    "type": "team",
+    "name": "Abkhazia",
+    "id": "7a999173-1438-4bb3-86d3-1b886839216b"
   }, {
     "type": "team",
     "name": "Belgium",
@@ -96,23 +112,27 @@
   }]
 }, {
   "id": "8e360d1a-5360-4ac7-b044-ea75eb00da52",
+  "name": "Poland",
+  "type": "team",
   "participants": ["francis.king@foreignpolicy.com", "diana.marrero@foreignpolicy.com"],
   "pref": [{
     "type": "team",
-    "name": "Belgium",
-    "id": "18159330-003d-4966-8ef5-1252b74d977f"
+    "name": "Sweden",
+    "id": "edcb9a37-87d6-4896-b20e-0d01c20014e0"
   }, {
     "type": "team",
-    "name": "Netherlands",
-    "id": "9e418671-3c9a-42ef-9327-2873715df9ae"
+    "name": "Barbados",
+    "id": "5c998b84-daf7-4397-a6c5-01bb3731a9b8"
   }]
 }, {
   "id": "95da4555-5d4e-492b-9ddd-d34655c85cc1",
+  "name": "South Korea",
+  "type": "team",
   "participants": ["claire.furbush@foreignpolicy.com", "christian.perez@foreignpolicy.com"],
   "pref": [{
     "type": "team",
-    "name": "China",
-    "id": "a8913a91-4598-45cc-bfef-555846c7f185"
+    "name": "South Africa",
+    "id": "1a46a436-637b-44a5-8b4e-3d58460c2d95"
   }, {
     "type": "team",
     "name": "Turkey",
@@ -120,58 +140,70 @@
   }]
 }, {
   "id": "9e418671-3c9a-42ef-9327-2873715df9ae",
+  "name": "Netherlands",
+  "type": "team",
   "participants": ["tevin@sharedstudios.com", "tevinmcquilkin@gmail.com"],
   "pref": [{
     "type": "team",
-    "name": "Abkhazia",
-    "id": "7a999173-1438-4bb3-86d3-1b886839216b"
+    "name": "Belgium",
+    "id": "18159330-003d-4966-8ef5-1252b74d977f"
   }, {
     "type": "team",
-    "name": "Poland",
-    "id": "8e360d1a-5360-4ac7-b044-ea75eb00da52"
+    "name": "Canada",
+    "id": "fd71b94c-5105-4a03-99be-f7cba230ba0a"
   }]
 }, {
   "id": "a8913a91-4598-45cc-bfef-555846c7f185",
+  "name": "China",
+  "type": "team",
   "participants": ["caitlin.oconnell@foreignpolicy.com", "catherine.snow@foreignpolicy.com"],
   "pref": [{
     "type": "team",
-    "name": "South Korea",
-    "id": "95da4555-5d4e-492b-9ddd-d34655c85cc1"
-  }, {
-    "type": "team",
-    "name": "Abkhazia",
-    "id": "7a999173-1438-4bb3-86d3-1b886839216b"
-  }]
-}, {
-  "id": "edcb9a37-87d6-4896-b20e-0d01c20014e0",
-  "participants": ["andrew.baughman@foreignpolicy.com", "bryan.flynn@foreignpolicy.com"],
-  "pref": [{
-    "type": "team",
-    "name": "Russia",
-    "id": "80fc0981-5604-4d8a-b235-ad1f1d71cd1b"
+    "name": "Japan",
+    "id": "500e92a9-f7c9-49c2-91c4-47086967cdb5"
   }, {
     "type": "team",
     "name": "South Africa",
     "id": "1a46a436-637b-44a5-8b4e-3d58460c2d95"
   }]
 }, {
+  "id": "edcb9a37-87d6-4896-b20e-0d01c20014e0",
+  "name": "Sweden",
+  "type": "team",
+  "participants": ["andrew.baughman@foreignpolicy.com", "bryan.flynn@foreignpolicy.com"],
+  "pref": [{
+    "type": "team",
+    "name": "Poland",
+    "id": "8e360d1a-5360-4ac7-b044-ea75eb00da52"
+  }, {
+    "type": "team",
+    "name": "Japan",
+    "id": "500e92a9-f7c9-49c2-91c4-47086967cdb5"
+  }]
+}, {
   "id": "fd71b94c-5105-4a03-99be-f7cba230ba0a",
+  "name": "Canada",
+  "type": "team",
   "participants": ["adam.griffiths@foreignpolicy.com", "allison.carlson@foreignpolicy.com"],
   "pref": [{
     "type": "team",
-    "name": "United Arab Emirates",
-    "id": "5ecca2f7-05cb-4af4-a621-387c8eec8d18"
-  }, {
-    "type": "team",
     "name": "Barbados",
     "id": "5c998b84-daf7-4397-a6c5-01bb3731a9b8"
+  }, {
+    "type": "team",
+    "name": "Netherlands",
+    "id": "9e418671-3c9a-42ef-9327-2873715df9ae"
   }]
 }, {
   "id": "expert2@sharedstudios.com",
+  "name": "Expert2 Expert2",
+  "type": "expert",
   "participants": [],
   "pref": [null, null]
 }, {
   "id": "expert@sharedstudios.com",
+  "name": "Expert 1 Expert 1",
+  "type": "expert",
   "participants": [],
   "pref": [null, null]
 }]
